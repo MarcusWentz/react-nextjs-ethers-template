@@ -13,6 +13,21 @@ import React, {useState} from 'react'
 import {ethers} from 'ethers'
 import contractABI from '../data/contracts/contractABI.json'
 
+// https://stackoverflow.com/a/72081301
+// import { MetaMaskInpageProvider } from "@metamask/providers";
+
+// declare global {
+//   interface Window{
+//     ethereum?:MetaMaskInpageProvider
+//   }
+// }
+
+declare global {
+  interface Window{
+    ethereum?:any
+  }
+}
+
 export default function Home() {
 
   // deploy simple storage contract and paste deployed contract address here. This value is local ganache chain
@@ -26,6 +41,8 @@ export default function Home() {
 	}
 
 	const providerRead = new ethers.BrowserProvider(window.ethereum); //Imported ethers from index.html with "<script src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js" type="text/javascript"></script>".
+
+	// Now you can use the provider
 
 	const contractRead = new ethers.Contract(contractAddress, contractABI, providerRead);
 
@@ -47,7 +64,8 @@ export default function Home() {
 
 		if (window.ethereum === undefined || window.ethereum.isMetaMask === undefined) {
 			console.log('Need to install MetaMask');
-			setErrorMessage('Please install MetaMask browser extension to interact');
+			setCurrentContractVal(" Please install MetaMask browser extension to interact")
+			// setErrorMessage("Please install MetaMask browser extension to interact");
 			return;
 		}
 
