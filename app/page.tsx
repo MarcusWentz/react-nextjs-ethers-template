@@ -256,18 +256,24 @@ export default function Home() {
           <h4> </h4>
             <button className="button buttonConnectMetamask" onClick={connectWalletHandler}>{connButtonText}</button>
             <div>
+			{/* <div className="min-h-[200px]">B</div> */}
+			<div className="min-h-[5vh]"></div>
             <h5> storedData(): </h5>
             {currentContractVal}
             <h4> </h4>
             </div>
+			<div className="min-h-[5vh]"></div>
             <form onSubmit={setHandler}>
               <button className="button buttonHighContrast" type={"submit"}> set(uint256 x) </button>
               <h4> </h4>
+			  <div className="min-h-[5vh]"></div>
               <input id="setText" type="text" placeholder="input uint256 value"/>
             </form>
+			<div className="min-h-[5vh]"></div>
             <h4> </h4>
             {errorMessage}
             <h4> </h4>
+			<div className="min-h-[5vh]"></div>
             <form action="https://github.com/MarcusWentz/react-nextjs-ethers-template">
               <input className="button buttonHighContrast" type="submit" value="GitHub" />
             </form>
