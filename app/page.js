@@ -11,16 +11,17 @@
 
 import React, {useState} from 'react'
 import {ethers} from 'ethers'
+// import ethers from 'ethers'
 import contractABI from '../data/contracts/contractABI.json'
 
-// https://stackoverflow.com/a/72081301
-import { MetaMaskInpageProvider } from "@metamask/providers";
+// // https://stackoverflow.com/a/72081301
+// import { MetaMaskInpageProvider } from "@metamask/providers";
 
-declare global {
-  interface Window{
-    ethereum?:MetaMaskInpageProvider
-  }
-}
+// declare global {
+//   interface Window{
+//     ethereum?:MetaMaskInpageProvider
+//   }
+// }
 
 // declare global {
 //   interface Window{
