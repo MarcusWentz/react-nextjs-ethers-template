@@ -256,8 +256,13 @@ export default function Home() {
           <h4> </h4>
             <button className="button buttonConnectMetamask" onClick={connectWalletHandler}>{connButtonText}</button>
             <div>
+
+			{/* Spacing based on pixels. */}
 			{/* <div className="min-h-[200px]">B</div> */}
+
+			{/* Spacing based on device screen percentage. */}
 			<div className="min-h-[5vh]"></div>
+
             <h5> storedData(): </h5>
             {currentContractVal}
             <h4> </h4>
