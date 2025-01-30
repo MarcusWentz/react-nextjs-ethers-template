@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image";
+// import Image from "next/image";
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
@@ -64,7 +64,7 @@ export default function Home() {
 		// alert(JSON.stringify(chainId))
 
 		// Updated chainId request method suggested by Metamask.
-		let chainIdConnected = await window.ethereum.request({method: 'net_version'});
+		const chainIdConnected = await window.ethereum.request({method: 'net_version'});
 
 		// // Outdated chainId request method which might get deprecated:
 		// //  https://github.com/MetaMask/metamask-improvement-proposals/discussions/23
@@ -131,7 +131,7 @@ export default function Home() {
 
 		event.preventDefault(); //Keep this or else the page will refresh.
 
-		let inputValue = event.target.setText.value;
+		const inputValue = event.target.setText.value;
 
 		if(inputValue=== "") {
 			alert("Enter a number.");
@@ -185,7 +185,7 @@ export default function Home() {
 	async function getStoredData() {
 
 		// Updated chainId request method suggested by Metamask.
-		let chainIdConnected = await window.ethereum.request({method: 'net_version'});
+		const chainIdConnected = await window.ethereum.request({method: 'net_version'});
 
 		// // Outdated chainId request method which might get deprecated:
 		// //  https://github.com/MetaMask/metamask-improvement-proposals/discussions/23
@@ -198,13 +198,13 @@ export default function Home() {
 			return;
 		}
 		
-		let storedDataCallValue = await contractRead.storedData()
+		const storedDataCallValue = await contractRead.storedData()
 		// console.log(storedDataCallValue)
 		if(storedDataCallValue === undefined){
 			setCurrentContractVal("Install Metamask and select Goerli Testnet to have a Web3 provider to read blockchain data.");
 		}
 		else{
-			let storedDataCallValueNumber = Number(storedDataCallValue);
+			const storedDataCallValueNumber = Number(storedDataCallValue);
 			// console.log(storedDataCallValueNumber)
 			setCurrentContractVal(storedDataCallValueNumber);
 		}
