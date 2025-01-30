@@ -65,8 +65,9 @@ body {
 
 
 .buttonHighContrast {
-  background-color: #000000;
-  color: #ffffff;
+  /* background-color: #000000; */
+  background-color: #ffffff;
+  color: #808080;
   border-style: solid;
   border-color: #ffffff;
   padding: 15px 32px;
@@ -77,8 +78,9 @@ body {
 }
 
 .buttonHighContrast:hover {
-  background-color: #ffffff;
-  color: #000000;
+  /* background-color: #000000; */
+  background-color: #808080;
+  color: #ffffff;
   border-style: solid;
   border-color: #ffffff;
   padding: 15px 32px;
@@ -89,10 +91,11 @@ body {
 }
 
 .buttonConnectMetamask {
-  background-color: #000000;
-  color: #ff7300;
+  /* background-color: #000000; */
+  background-color: #ff7300;
+  color: #000000;
   border-style: solid;
-  border-color: #ff7300;
+  /* border-color: #ff7300; */
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -101,10 +104,11 @@ body {
 }
 
 .buttonConnectMetamask:hover {
-  background-color: #ff7300;
-  color: #000000;
+  /* background-color: #000000; */
+  background-color: #808080;
+  color: #ff7300;
   border-style: solid;
-  border-color: #ff7300;
+  /* border-color: #ff7300; */
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
