@@ -268,7 +268,7 @@ export default function Home() {
             <h4> </h4>
             {errorMessage}
             <h4> </h4>
-            <form action="https://github.com/MarcusWentz/react-vite-ethers-template">
+            <form action="https://github.com/MarcusWentz/react-nextjs-ethers-template">
               <input className="button buttonHighContrast" type="submit" value="GitHub" />
             </form>
           </div>
