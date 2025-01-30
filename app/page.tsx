@@ -22,11 +22,11 @@ import contractABI from '../data/contracts/contractABI.json'
 //   }
 // }
 
-declare global {
-  interface Window{
-    ethereum?:any
-  }
-}
+// declare global {
+//   interface Window{
+//     ethereum?:any
+//   }
+// }
 
 export default function Home() {
 
