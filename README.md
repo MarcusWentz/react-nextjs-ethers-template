@@ -14,18 +14,19 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 npx create-next-app@latest
 ```
 
-## Getting Started
+## Setup Testing locally 
 
-First, run the development server:
-
+Install packages
+```bash 
+npm i
+```
+Run locally with
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Test builds for production with
+```bash
+npm run build
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
