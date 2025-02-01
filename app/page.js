@@ -329,7 +329,7 @@ export default function Home() {
               <button className="button buttonHighContrast" type={"submit"}> set(uint256 x) </button>
               <h4> </h4>
 			  <div className="min-h-[5vh]"></div>
-              <input id="setText" type="text" placeholder="input uint256 value"/>
+              <input id="setText" type="text" placeholder="input uint256 value" style={{ backgroundColor: "white", color: "black", padding: "5px" }}/>
             </form>
 			<div className="min-h-[5vh]"></div>
             <h4> </h4>
