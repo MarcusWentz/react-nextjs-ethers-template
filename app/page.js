@@ -129,7 +129,7 @@ export default function Home() {
 		console.log("chainIdConnected: " + chainIdConnected)
 
 		if(chainIdConnected != baseSepoliaChainId){
-			// alert("You are not on the Goerli Testnet! Please switch to Goerli and refresh page.")
+			// alert("You are not on the Base Sepolia Testnet! Please switch to Base Sepolia and refresh page.")
 			try{
 				await window.ethereum.request({
 					method: "wallet_switchEthereumChain",
@@ -251,14 +251,14 @@ export default function Home() {
 		console.log("chainIdConnected: " + chainIdConnected)
 
 		if(chainIdConnected != baseSepoliaChainId){
-			setCurrentContractVal("You are not on the Base Sepolia Testnet. Please switch to Goerli and refresh page.");
+			setCurrentContractVal("You are not on the Base Sepolia Testnet. Please switch to Base Sepolia and refresh page.");
 			return;
 		}
 		
 		const storedDataCallValue = await contractRead.storedData()
 		// console.log(storedDataCallValue)
 		if(storedDataCallValue === undefined){
-			setCurrentContractVal("Install Metamask and select Goerli Testnet to have a Web3 provider to read blockchain data.");
+			setCurrentContractVal("Install Metamask and select Base Sepolia Testnet to have a Web3 provider to read blockchain data.");
 		}
 		else{
 			const storedDataCallValueNumber = Number(storedDataCallValue);
