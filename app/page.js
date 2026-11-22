@@ -215,7 +215,10 @@ export default function Home() {
 
 		// console.log(contractWrite.interface);
 
-		const tx = await contractWrite.set(inputValue);
+    const tx = await contractWrite.set(
+      inputValue,
+      { type: 2 } //force tx type 2 to avoid 7702 tx
+    );
 		console.log(tx.hash);
 
 		// // Test directly if the tx fails with React hook variables.
