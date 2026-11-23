@@ -1,4 +1,4 @@
-# react-nextjs-ethers-template
+# react-nextjs-ethers-javascript
 
 ## Overview 
 
